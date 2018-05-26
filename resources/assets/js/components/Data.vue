@@ -1,12 +1,12 @@
 <template>
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
-            <div class="col-md-8 col-md-offset-2">
+            <div class="col-md-12">
                 <div class="panel panel-default">
-                    <div class="panel-heading">資料頁面</div>
+                    <h3 class="panel-heading">資料頁面</h3>
 ​
                     <div class="panel-body">
-                        <table class="table-striped data-table">
+                        <table class="table-condensed data-table">
                             <thead>
                                 <tr>
                                     <th v-if="dataset.resultData.length>0" v-for="(title,titleKey) in dataset.resultDataKey" :key="titleKey">{{ title }}</th>
@@ -56,7 +56,6 @@
                             }
                         }
                     })
-                console.log(self.dataset);
             }
         }
     }

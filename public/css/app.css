@@ -10418,6 +10418,7 @@ a.text-dark:focus {
 }
 
 .data-table {
-  font-size: 30px;
+  width: 100%;
+  height: 100%;
 }
 

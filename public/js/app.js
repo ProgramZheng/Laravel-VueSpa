@@ -50383,7 +50383,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                     }
                 }
             });
-            console.log(self.dataset);
         }
     }
 });
@@ -50396,14 +50395,14 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "container" }, [
+  return _c("div", { staticClass: "container-fluid" }, [
     _c("div", { staticClass: "row" }, [
-      _c("div", { staticClass: "col-md-8 col-md-offset-2" }, [
+      _c("div", { staticClass: "col-md-12" }, [
         _c("div", { staticClass: "panel panel-default" }, [
-          _c("div", { staticClass: "panel-heading" }, [_vm._v("資料頁面")]),
+          _c("h3", { staticClass: "panel-heading" }, [_vm._v("資料頁面")]),
           _vm._v("\n​\n                    "),
           _c("div", { staticClass: "panel-body" }, [
-            _c("table", { staticClass: "table-striped data-table" }, [
+            _c("table", { staticClass: "table-condensed data-table" }, [
               _c("thead", [
                 _c(
                   "tr",
