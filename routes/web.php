@@ -11,6 +11,7 @@
 |
 */
 
-Route::get('/', function () {return view('Home');});
-Route::get('/Datas', 'DatasController@create');
-Route::post('/Datas', 'DatasController@create');
+Route::get('/', 'HomeController@index');
+Route::get('{path}', 'HomeController@index');
+
+Route::post('/Datas','DatasController@create');
