@@ -27599,8 +27599,6 @@ window.Vue = __webpack_require__(12);
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-Vue.component('example-component', __webpack_require__(41));
-
 
 var app = new Vue({
   el: '#app',
@@ -27672,7 +27670,6 @@ if (token) {
 //     cluster: process.env.MIX_PUSHER_APP_CLUSTER,
 //     encrypted: true
 // });
-window.axios.defaults.baseURL = laravel;
 
 
 
@@ -49906,125 +49903,9 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1), __webpack_require__(7)))
 
 /***/ }),
-/* 41 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-var normalizeComponent = __webpack_require__(2)
-/* script */
-var __vue_script__ = __webpack_require__(42)
-/* template */
-var __vue_template__ = __webpack_require__(43)
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = null
-/* scopeId */
-var __vue_scopeId__ = null
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources\\assets\\js\\components\\ExampleComponent.vue"
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-0ca92eac", Component.options)
-  } else {
-    hotAPI.reload("data-v-0ca92eac", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 42 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-    mounted: function mounted() {
-        console.log('Component mounted.');
-    }
-});
-
-/***/ }),
-/* 43 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _vm._m(0)
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container" }, [
-      _c("div", { staticClass: "row justify-content-center" }, [
-        _c("div", { staticClass: "col-md-8" }, [
-          _c("div", { staticClass: "card card-default" }, [
-            _c("div", { staticClass: "card-header" }, [
-              _vm._v("Example Component")
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "card-body" }, [
-              _vm._v(
-                "\n                    I'm an example component.\n                "
-              )
-            ])
-          ])
-        ])
-      ])
-    ])
-  }
-]
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-0ca92eac", module.exports)
-  }
-}
-
-/***/ }),
+/* 41 */,
+/* 42 */,
+/* 43 */,
 /* 44 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -50036,11 +49917,14 @@ var routes = [{
     path: '/home', //路徑
     component: __webpack_require__(45) //Component
 }, {
-    path: '/about',
-    component: __webpack_require__(48)
+    path: '/video',
+    component: __webpack_require__(62)
 }, {
     path: '/data',
     component: __webpack_require__(51)
+}, {
+    path: '/movie',
+    component: __webpack_require__(59)
 }];
 
 /* harmony default export */ __webpack_exports__["a"] = (new __WEBPACK_IMPORTED_MODULE_0_vue_router__["a" /* default */]({
@@ -50139,12 +50023,10 @@ var staticRenderFns = [
       _c("div", { staticClass: "row" }, [
         _c("div", { staticClass: "col-md-8 col-md-offset-2" }, [
           _c("div", { staticClass: "panel panel-default" }, [
-            _c("div", { staticClass: "panel-heading" }, [_vm._v("Home Page")]),
+            _c("div", { staticClass: "panel-heading" }, [_vm._v("首頁")]),
             _vm._v("\n​\n                    "),
             _c("div", { staticClass: "panel-body" }, [
-              _vm._v(
-                "\n                        I'm Home Page!\n                    "
-              )
+              _vm._v("\n                        我是首頁\n                    ")
             ])
           ])
         ])
@@ -50162,119 +50044,9 @@ if (false) {
 }
 
 /***/ }),
-/* 48 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-var normalizeComponent = __webpack_require__(2)
-/* script */
-var __vue_script__ = __webpack_require__(49)
-/* template */
-var __vue_template__ = __webpack_require__(50)
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = null
-/* scopeId */
-var __vue_scopeId__ = null
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources\\assets\\js\\components\\About.vue"
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-18887826", Component.options)
-  } else {
-    hotAPI.reload("data-v-18887826", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 49 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-/* harmony default export */ __webpack_exports__["default"] = ({});
-
-/***/ }),
-/* 50 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _vm._m(0)
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container" }, [
-      _c("div", { staticClass: "row" }, [
-        _c("div", { staticClass: "col-md-8 col-md-offset-2" }, [
-          _c("div", { staticClass: "panel panel-default" }, [
-            _c("div", { staticClass: "panel-heading" }, [_vm._v("About Page")]),
-            _vm._v("\n​\n                    "),
-            _c("div", { staticClass: "panel-body" }, [
-              _vm._v(
-                "\n                        I'm About Page!\n                    "
-              )
-            ])
-          ])
-        ])
-      ])
-    ])
-  }
-]
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-18887826", module.exports)
-  }
-}
-
-/***/ }),
+/* 48 */,
+/* 49 */,
+/* 50 */,
 /* 51 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -50361,7 +50133,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     },
     data: function data() {
         return {
-            test: 'qqq',
             dataset: {
                 resultData: [],
                 resultDataKey: []
@@ -50401,7 +50172,9 @@ var render = function() {
     _c("div", { staticClass: "row" }, [
       _c("div", { staticClass: "col-md-12" }, [
         _c("div", { staticClass: "panel panel-default" }, [
-          _c("h3", { staticClass: "panel-heading" }, [_vm._v("資料頁面")]),
+          _c("h3", { staticClass: "panel-heading" }, [
+            _vm._v("初任人員平均經常性薪資")
+          ]),
           _vm._v("\n​\n                    "),
           _c("div", { staticClass: "panel-body" }, [
             _c("table", { staticClass: "table-condensed data-table" }, [
@@ -50456,6 +50229,313 @@ if (false) {
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 55 */,
+/* 56 */,
+/* 57 */,
+/* 58 */,
+/* 59 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(2)
+/* script */
+var __vue_script__ = __webpack_require__(60)
+/* template */
+var __vue_template__ = __webpack_require__(61)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources\\assets\\js\\components\\Movie.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-a1a9eb6e", Component.options)
+  } else {
+    hotAPI.reload("data-v-a1a9eb6e", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 60 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    created: function created() {
+        this.init();
+    },
+    data: function data() {
+        return {
+            dataset: {
+                resultData: [],
+                resultDataKey: []
+            }
+        };
+    },
+
+    methods: {
+        init: function init() {
+            var self = this;
+            axios({
+                method: 'post',
+                url: '/Movie'
+            }).then(function (response) {
+                console.log(response);
+                var resultData = response.data;
+                for (var data in resultData) {
+                    self.dataset.resultData.push(resultData[data]);
+                }
+                //集合陣列的key
+                for (var i = 0; i < resultData.length; i++) {
+                    self.dataset.resultDataKey = ["活動名稱", "開始時間", "結束時間"];
+                }
+            });
+        }
+    }
+});
+
+/***/ }),
+/* 61 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "container-fluid" }, [
+    _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "col-md-12" }, [
+        _c("div", { staticClass: "panel panel-default" }, [
+          _c("h3", { staticClass: "panel-heading" }, [_vm._v("電影")]),
+          _vm._v("\n​\n                    "),
+          _c("div", { staticClass: "panel-body" }, [
+            _c("table", { staticClass: "table-condensed data-table" }, [
+              _c("thead", [
+                _c(
+                  "tr",
+                  _vm._l(_vm.dataset.resultDataKey, function(title, titleKey) {
+                    return _vm.dataset.resultData.length > 0
+                      ? _c("th", { key: titleKey }, [
+                          _vm._v(
+                            "\n                                        " +
+                              _vm._s(title) +
+                              "\n                                    "
+                          )
+                        ])
+                      : _vm._e()
+                  })
+                )
+              ]),
+              _vm._v(" "),
+              _c(
+                "tbody",
+                _vm._l(_vm.dataset.resultData, function(data, dataKey) {
+                  return _vm.dataset.resultData.length > 0
+                    ? _c("tr", { key: dataKey }, [
+                        _c("td", [_vm._v(_vm._s(data.title))]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v(_vm._s(data.startDate))]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v(_vm._s(data.endDate))])
+                      ])
+                    : _vm._e()
+                })
+              )
+            ])
+          ])
+        ])
+      ])
+    ])
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-a1a9eb6e", module.exports)
+  }
+}
+
+/***/ }),
+/* 62 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(2)
+/* script */
+var __vue_script__ = __webpack_require__(63)
+/* template */
+var __vue_template__ = __webpack_require__(64)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources\\assets\\js\\components\\Video.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-90557bd8", Component.options)
+  } else {
+    hotAPI.reload("data-v-90557bd8", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 63 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({});
+
+/***/ }),
+/* 64 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "container" }, [
+      _c("div", { staticClass: "row" }, [
+        _c("div", { staticClass: "col-md-8 col-md-offset-2" }, [
+          _c("div", { staticClass: "panel panel-default" }, [
+            _c("div", { staticClass: "panel-heading" }, [_vm._v("Video")]),
+            _vm._v("\n​\n                    "),
+            _c("div", { staticClass: "panel-body" }, [
+              _c("iframe", {
+                attrs: {
+                  width: "854",
+                  height: "480",
+                  src: "https://www.youtube.com/embed/fmXcV98jggQ",
+                  frameborder: "0",
+                  allow: "autoplay; encrypted-media",
+                  allowfullscreen: ""
+                }
+              })
+            ])
+          ])
+        ])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-90557bd8", module.exports)
+  }
+}
 
 /***/ })
 /******/ ]);

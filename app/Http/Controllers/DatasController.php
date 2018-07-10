@@ -12,4 +12,10 @@ class DatasController extends Controller
         $data = file_get_contents($url);
         return $data;
     }
+    public function movie()
+    {
+        $url = "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=8";
+        $data = file_get_contents($url);
+        return $data;
+    }
 }

@@ -8,6 +8,7 @@ class HomeController extends Controller
 {
     public function index()
     {
-        return view('Home');
+        $realPath = env('APP_NAME').'/public/';
+        return view('Home')->with('realPath',$realPath);
     }
 }

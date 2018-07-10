@@ -6,12 +6,16 @@ let routes = [
               component:require('./components/Home')//Component
     },
     {
-        path:'/about',
-        component:require('./components/About')
+        path:'/video',
+        component:require('./components/Video')
     },
     {
         path:'/data',
         component:require('./components/Data')
+    },
+    {
+        path:'/movie',
+        component:require('./components/Movie')
     }
 ];
 

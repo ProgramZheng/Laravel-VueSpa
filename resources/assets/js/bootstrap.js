@@ -54,7 +54,6 @@ if (token) {
 //     cluster: process.env.MIX_PUSHER_APP_CLUSTER,
 //     encrypted: true
 // });
-window.axios.defaults.baseURL = laravel;
 
 import Vue from 'vue';
 import VueRouter from 'vue-router';

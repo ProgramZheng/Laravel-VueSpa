@@ -3,10 +3,10 @@
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <div class="panel panel-default">
-                    <div class="panel-heading">About Page</div>
+                    <div class="panel-heading">Video</div>
 ​
                     <div class="panel-body">
-                        I'm About Page!
+                        <iframe width="854" height="480" src="https://www.youtube.com/embed/fmXcV98jggQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
@@ -16,6 +16,5 @@
 ​
 <script>
     export default {
-
     }
 </script>

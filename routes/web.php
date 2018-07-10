@@ -12,6 +12,7 @@
 */
 
 Route::get('/', 'HomeController@index');
-Route::get('{path}', 'HomeController@index');
+Route::get('/{vue?}', 'HomeController@index')->where('vue', '[\/\w\.-]*');
 
 Route::post('/Datas','DatasController@create');
+Route::post('/Movie','DatasController@movie');
