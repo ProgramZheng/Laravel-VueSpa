@@ -17,7 +17,7 @@
         <div></div>
         <router-view></router-view>
     </div>
-    </iframe>
+    <iframe id="video" width="854" height="480" src="https://www.youtube.com/embed/2p4MpT-VgSo" frameborder="0"></iframe>
     <script src="js/app.js"></script>
 </body>
 </html>
